@@ -145,11 +145,4 @@ echo "Preventing Time Machine from trying to use new drives by default"
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
 echo ""
-echo "Setting a Transmission block list"
-defaults write org.m0k.transmission EncryptionRequire -bool true
-defaults write org.m0k.transmission BlocklistAutoUpdate -bool true
-defaults write org.m0k.transmission BlocklistNew -bool true
-defaults write org.m0k.transmission BlocklistURL -string "http://john.bitsurge.net/public/biglist.p2p.gz"
-
-echo ""
 echo "Restart for these changes to take effect"
